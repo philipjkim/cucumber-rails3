@@ -11,7 +11,7 @@ When /^I press "([^"]*)"$/ do |text|
 end
 
 Then /^I should be on the book list page$/ do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content('List books')
 end
 
 Then /^I should see "([^"]*)"$/ do |arg1|
