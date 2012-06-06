@@ -14,6 +14,6 @@ Then /^I should be on the book list page$/ do
   page.should have_content('List books')
 end
 
-Then /^I should see "([^"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then /^I should see "([^"]*)"$/ do |text|
+  page.should have_content text
 end
